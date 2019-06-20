@@ -50,7 +50,6 @@ Route::view('/preliminary/maranao-inspired-gown', 'judges.maranao-inspired')->mi
 Route::view('/preliminary/prelim-interview', 'judges.preliminterview')->middleware('auth');
 
 // Judges Category
-// Route::get('/judge-category/{id}','JudgeCategory@index')->middleware('auth');
 Route::view('/judge-category/cocktail-dress', 'category.cocktaildress')->middleware('auth');
 Route::view('/judge-category/festival-costume', 'category.festivalcostume')->middleware('auth');
 Route::view('/judge-category/swim-wear', 'category.swimwear')->middleware('auth');
@@ -88,7 +87,6 @@ Route::get('/judges/mi/{id}', 'JudgesController@getMI')->middleware('auth');
 Route::get('/judges/pi/{id}', 'JudgesController@getPI')->middleware('auth');
 
 //Report Controller
-//Route::get('/report/juid/{id}','ReportController@getIndividualRankReportQA')->middleware('auth');
 Route::get('/report/qa/{id}', 'ReportController@getIndividualRankReportQA')->middleware('auth');
 Route::get('/report/fc/{id}', 'ReportController@getIndividualRankReportFC')->middleware('auth');
 Route::get('/report/cd/{id}', 'ReportController@getIndividualRankReportCD')->middleware('auth');
@@ -107,9 +105,6 @@ Route::get('/report/test', 'ReportController@testPDF')->middleware('auth');
 Route::get('/data-controller', 'DataController@index')->middleware('auth');
 Route::get('/data-controller/category/{id}', 'CategoryController@getCategoriesByJudgeId')->middleware('auth');
 Route::post('/rating/change-state', 'RatingController@toggleRatingState')->middleware('auth');
-
-// Top 5 Finalist
-//Route::get('/top-five', 'TopFiveController@index')->middleware('auth');
 
 // Rank Routes
 Route::post('/api/finals/topcandidates', 'RankController@saveFinalist')->middleware('auth');
