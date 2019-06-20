@@ -41,7 +41,7 @@
     "vue-template-compiler": "^2.6.10",
     "vuex": "^3.1.1"
   },
-  "name": "pgldn-municipal-showdown",
+  "name": "pgldn-sagayan-festival",
   "version": "1.0.0",
   "main": "webpack.mix.js",
   "directories": {
@@ -49,18 +49,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matalouiec/pgldn-municipal-showdown.git"
+    "url": "git+https://github.com/matalouiec/pgldn-sagayan-festival.git"
   },
   "author": "Dong Lou",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matalouiec/pgldn-municipal-showdown/issues"
+    "url": "https://github.com/matalouiec/pgldn-sagayan-festival/issues"
   },
-  "homepage": "https://github.com/matalouiec/pgldn-municipal-showdown#readme",
-  "description": "Ranking System for showdown of municipalities",
+  "homepage": "https://github.com/matalouiec/pgldn-sagayan-festival#readme",
+  "description": "Ranking System for Sagayan Festival Competition",
   "keywords": [
-    "showdown",
-    "of",
-    "municipalities"
+    "Sagayan"
   ]
 }
