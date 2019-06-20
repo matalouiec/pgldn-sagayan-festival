@@ -43,6 +43,7 @@
         <div class="row">
             <div class="col-md-12">
                 <center>July 2, 2019 9:00AM | MCC Grandstand, Sagadan, Tubod, Lanao del Norte</center>
+                <br>
             </div>
         </div>
         <div class="row">
@@ -53,15 +54,16 @@
                     <tr>
                         <th class="text-center" rowspan="2">Rank</th>
                         <th class="text-center" rowspan="2">Contestant</th>
-                        <th class="text-center" colspan="5" style="background:rgba(64, 160, 255,0.5);">CRITERIA</th>
+                        <th class="text-center" colspan="3" style="background:#90ee90;">PERFORMANCE</th>
+                        <th class="text-center" colspan="2" style="background:#f2476a;">MUSICALITY</th>
                         <th class="text-center" rowspan="2">TOTAL (100%)</th>
                     </tr>
                     <tr>
-                        <th class="text-center">Concept (10%)</th>
+                        <th class="text-center">Interpretation (30%)</th>
                         <th class="text-center">Choreography (30%)</th>
-                        <th class="text-center">Performance (30%)</th>
-                        <th class="text-center">Musicality (15%)</th>
-                        <th class="text-center">Costume & Props (15%)</th>
+                        <th class="text-center">Costume (10%)</th>
+                        <th class="text-center">Sagayan Beat (20%)</th>
+                        <th class="text-center">Rhythm (10%)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -69,11 +71,11 @@
                     <tr>
                         <th scope="row" class="text-center">{{ $rank->seqno }}</th>
                         <td><b>{{ $rank->Contestants }}</b><br /><sub style="font-size:12px;">({{ $rank->representing }})</sub></td>
-                        <td class="text-center">{{ $rank->concept }}</td>
-                        <td class="text-center">{{ $rank->choreography }}</td>
-                        <td class="text-center">{{ $rank->performance }}</td>
-                        <td class="text-center">{{ $rank->musicality }}</td>
-                        <td class="text-center">{{ $rank->costume }}</td>
+                        <td class="text-center">{{ $rank->Interpretation }}</td>
+                        <td class="text-center">{{ $rank->Choreography }}</td>
+                        <td class="text-center">{{ $rank->Costume }}</td>
+                        <td class="text-center">{{ $rank->SagayanBeat }}</td>
+                        <td class="text-center">{{ $rank->Rhythm }}</td>
                         <td class="text-center">{{ $rank->TOTAL }}%</td>
                     </tr>
                     @endforeach

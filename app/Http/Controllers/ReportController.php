@@ -176,7 +176,7 @@ class ReportController extends Controller
             ->where('Judge', $request->id)
             ->select([DB::raw('CASE WHEN @prev_value = TOTAL THEN @row
                                         WHEN @prev_value := TOTAL THEN @row := @row + 1
-                                        END AS seqno'), 'representing', 'isFinal', 'parent', 'backcolor', 'judge', 'Contestants', 'concept', 'choreography', 'performance', 'musicality', 'costume', 'TOTAL'])
+                                        END AS seqno'), 'representing', 'isFinal', 'parent', 'backcolor', 'judge', 'Contestants', 'Interpretation','Choreography','Costume','SagayanBeat','Rhythm', 'TOTAL'])
             ->get();
 
         $payload = array(

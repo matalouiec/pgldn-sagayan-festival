@@ -18,11 +18,11 @@
               <th class="text-center" rowspan="2">TOTAL (100%)</th>
             </tr>
             <tr>
-              <th class="text-center" title="Concept">Concept (10%)</th>
+              <th class="text-center" title="Interpretation (30%)">Interpretation (30%)</th>
               <th class="text-center" title="Choreography">Choreography (30%)</th>
-              <th class="text-center" title="Performance">Performance (30%)</th>
-              <th class="text-center" title="Musicality">Musicality (15%)</th>
-              <th class="text-center" title="Costume">Costume & Props (15%)</th>
+              <th class="text-center" title="Costume">Costume (10%)</th>
+              <th class="text-center" title="Sagayan">Sagayan Beat (20%)</th>
+              <th class="text-center" title="Rhythm">Rhythm (10%)</th>
             </tr>
           </thead>
           <tbody>
@@ -49,11 +49,11 @@
                   <sub>({{ rank.representing }})</sub>
                 </a>
               </td>
-              <td class="text-center">{{ rank.concept }}</td>
-              <td class="text-center">{{ rank.choreography }}</td>
-              <td class="text-center">{{ rank.performance }}</td>
-              <td class="text-center">{{ rank.musicality }}</td>
-              <td class="text-center">{{ rank.costume }}</td>
+              <td class="text-center">{{ rank.Interpretation }}</td>
+              <td class="text-center">{{ rank.Choreography }}</td>
+              <td class="text-center">{{ rank.Costume }}</td>
+              <td class="text-center">{{ rank.SagayanBeat }}</td>
+              <td class="text-center">{{ rank.Rhythm }}</td>
               <td class="text-center">{{ rank.TOTAL.toFixed(2) }}%</td>
             </tr>
           </tbody>

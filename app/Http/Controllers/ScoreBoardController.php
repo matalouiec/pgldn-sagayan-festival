@@ -136,7 +136,7 @@ class ScoreBoardController extends Controller
             ->where('Judge', $uid)
             ->select([DB::raw('CASE WHEN @prev_value = TOTAL THEN @row
                                         WHEN @prev_value := TOTAL THEN @row := @row + 1
-                                        END AS seqno'), 'parent', 'representing', 'isFinal', 'backcolor', 'Contestants', 'concept', 'choreography', 'performance', 'musicality', 'costume', 'TOTAL'])
+                                        END AS seqno'), 'parent', 'representing', 'isFinal', 'backcolor', 'Contestants', 'Interpretation','Choreography','Costume','SagayanBeat','Rhythm', 'TOTAL'])
             ->get();
 
         return response()->json($rank);
